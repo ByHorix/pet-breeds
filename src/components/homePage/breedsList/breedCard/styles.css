@@ -1,0 +1,22 @@
+.breed-card {
+    @apply border-2 border-lime-800 rounded-md; /* border styles */
+    @apply p-4;
+    @apply max-w-96;
+    @apply flex flex-col justify-between;
+}
+
+.breed-card__image-wrapper {
+    @apply rounded-md overflow-hidden w-full h-64 relative;
+}
+
+.breed-card__image {
+    @apply h-full object-cover;
+}
+
+.breed-card__text-content {
+    @apply mt-4 text-center;
+}
+
+.breed-card__text-content-titling {
+    @apply text-2xl;
+}

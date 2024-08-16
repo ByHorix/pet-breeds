@@ -1,0 +1,7 @@
+.title {
+    @apply text-4xl text-center my-6;
+}
+
+.breeds-list {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 grid-flow-dense auto-rows-[max-content];
+}
