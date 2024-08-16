@@ -10,7 +10,8 @@ export const dogApi = axios.create({
     headers: {
         "Content-Type": "application/json",
         "x-api-key": process.env.DOG_API_KEY,
-    }
+    },
+    adapter: cache.adapter
 });
 
 export const catApi = axios.create({
@@ -18,5 +19,6 @@ export const catApi = axios.create({
     headers: {
         "Content-Type": "application/json",
         "x-api-key": process.env.CAT_API_KEY,
-    }
+    },
+    adapter: cache.adapter
 })
