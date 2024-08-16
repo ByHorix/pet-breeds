@@ -1,0 +1,7 @@
+.header {
+    @apply container mx-auto py-4;
+}
+
+.logo {
+    @apply h-12 w-auto;
+}

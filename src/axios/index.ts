@@ -21,4 +21,4 @@ export const catApi = axios.create({
         "x-api-key": process.env.CAT_API_KEY,
     },
     adapter: cache.adapter
-})
+});
