@@ -1,12 +1,12 @@
 .breed-card {
     @apply border-2 border-lime-800 rounded-md; /* border styles */
     @apply p-4;
-    @apply max-w-96;
+    @apply max-w-full;
     @apply flex flex-col justify-between;
 }
 
 .breed-card__image-wrapper {
-    @apply rounded-md overflow-hidden w-full h-64 relative;
+    @apply rounded-md overflow-hidden w-full h-auto sm:h-64 relative;
 }
 
 .breed-card__image {

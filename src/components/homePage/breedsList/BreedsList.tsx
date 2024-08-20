@@ -2,8 +2,12 @@
 
 import "./styles.css";
 import {BreedCard} from "@/components/homePage/breedsList/breedCard/BreedCard";
+import {useEffect} from "react";
 
 export const BreedsList = () => {
+    useEffect(() => {
+    }, []);
+
     const breeds = [
         {
             "weight": {

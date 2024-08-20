@@ -3,5 +3,7 @@
 }
 
 .breeds-list {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 grid-flow-dense auto-rows-[max-content];
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 grid-flow-dense auto-rows-[max-content];
+    @apply pb-4;
+    /*@apply pb-4;*/
 }
