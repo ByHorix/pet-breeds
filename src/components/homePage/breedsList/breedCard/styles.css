@@ -3,6 +3,7 @@
     @apply p-4;
     @apply max-w-full;
     @apply flex flex-col justify-between;
+    @apply transition-shadow hover:shadow-xl shadow-lime-800;
 }
 
 .breed-card__image-wrapper {
