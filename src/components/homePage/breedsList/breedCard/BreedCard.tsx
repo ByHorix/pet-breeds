@@ -10,13 +10,13 @@ export const BreedCard = ({breedData}: BreedCardProps) => {
     return (
         <Link href={`${breedData.id}`} className="breed-card">
             <div className="breed-card__image-wrapper">
-                <Image
+                {breedData.image && <Image
                     className="breed-card__image"
                     src={image.url}
                     alt={breedData.name}
                     width={image.width}
                     height={image.height}
-                />
+                />}
             </div>
             <div className="breed-card__text-content">
                 <h4 className="breed-card__text-content-titling">{breedData.name}</h4>

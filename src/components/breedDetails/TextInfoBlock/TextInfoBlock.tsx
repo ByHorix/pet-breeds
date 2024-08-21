@@ -29,7 +29,7 @@ export const TextInfoBlock = ({textData}: TextInfoBlockProps) => {
         <div className="text-block">
             <h2 className="text-block__title">{name}</h2>
             <div className="text-block__sizes">
-                <div className="text-block__sizes-block">
+                {height && <div className="text-block__sizes-block">
                     <h4 className="text-block__subtitle">Height</h4>
                     <div>
                         <h5 className="text-block__subtitle">Imperial: </h5>
@@ -39,7 +39,7 @@ export const TextInfoBlock = ({textData}: TextInfoBlockProps) => {
                         <h5 className="text-block__subtitle">Metric: </h5>
                         <span>{height.metric}</span>
                     </div>
-                </div>
+                </div>}
                 <div className="text-block__sizes-block">
                     <h4 className="text-block__subtitle">Weight</h4>
                     <div>

@@ -11,6 +11,11 @@ const nextConfig = {
                 hostname: 'cdn2.thedogapi.com',
                 port: '',
             },
+            {
+                protocol: 'https',
+                hostname: 'cdn2.thecatapi.com',
+                port: '',
+            },
         ],
     },
 };

@@ -16,3 +16,7 @@ export type BreedDetailsProps = {
 export type TextInfoBlockProps = {
     textData: Breed
 }
+
+export type BreedsListProps = {
+    breedsList: Breed[]
+}

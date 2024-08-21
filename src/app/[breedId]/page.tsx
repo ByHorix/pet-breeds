@@ -1,17 +1,14 @@
-import {allCats, allDogs, breedImages} from "@/fakeData";
 import {BreedDetails} from "@/components/breedDetails/BreedDetails";
-import {Breed} from "@/types/types";
+import {getBreedData} from "@/services";
 
-export default function BreedDetailsPage({ params: {breedId} }: { params: { breedId: string } }) {
+export default async function BreedDetailsPage({ params: {breedId} }: { params: { breedId: string } }) {
     const isCatsBreed = isNaN(Number(breedId));
 
-    const currentBreedList = isCatsBreed ? allCats : allDogs;
-
-    const currentBreedData = currentBreedList.find((breedData) => breedData.id == breedId) as Breed;
+    const {photos, breedData} = await getBreedData(isCatsBreed, breedId);
 
     return (
         <main>
-            <BreedDetails photos={breedImages} breedData={currentBreedData}/>
+            <BreedDetails photos={photos} breedData={breedData}/>
         </main>
     );
 }

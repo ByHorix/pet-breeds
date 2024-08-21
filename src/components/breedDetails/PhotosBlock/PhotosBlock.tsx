@@ -6,7 +6,7 @@ export const PhotosBlock = ({photosList}: PhotosBlockProps) => {
     return (
         <div className="breed-gallery">
                 {photosList.map((photo) => (
-                    <div className="breed-gallery__img-wrapper">
+                    <div className="breed-gallery__img-wrapper" key={photo.id}>
                         <Image
                             className="breed-gallery__img"
                             src={photo.url}
