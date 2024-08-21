@@ -1,0 +1,11 @@
+.breed-gallery {
+    @apply flex flex-col gap-4;
+}
+
+.breed-gallery__img-wrapper {
+    @apply w-full rounded-xl overflow-hidden;
+}
+
+.breed-gallery__img {
+    @apply w-full h-auto;
+}

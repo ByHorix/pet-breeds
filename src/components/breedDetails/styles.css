@@ -1,0 +1,14 @@
+.breed-details {
+    @apply flex flex-col gap-4 md:flex-row justify-between;
+}
+
+.breed-details__text {
+    @apply w-full md:w-6/12;
+    @apply md:min-h-full;
+    @apply overflow-visible;
+    @apply relative;
+}
+
+.breed-details__gallery {
+    @apply w-full md:w-5/12;
+}

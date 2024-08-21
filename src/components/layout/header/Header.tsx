@@ -2,11 +2,14 @@
 
 import Image from "next/image";
 import "./styles.css";
+import Link from "next/link";
 
 export const Header = () => {
     return (
         <header className="header">
-            <Image className="logo" src={'/logo/logo.svg'} alt={'logo'} width={160} height={37}/>
+            <Link href="/">
+                <Image className="logo" src={'/logo/logo.svg'} alt={'logo'} width={160} height={37}/>
+            </Link>
         </header>
     )
 }

@@ -1,0 +1,33 @@
+.text-block {
+    @apply border-2 rounded-md border-lime-800;
+    @apply p-8 text-block-height;
+    @apply md:sticky top-16 overflow-y-scroll;
+}
+
+.text-block__title {
+    @apply font-bold text-4xl mb-8;
+}
+
+.text-block__subtitle {
+    @apply font-semibold;
+}
+
+h4.text-block__subtitle {
+    @apply text-2xl mb-2;
+}
+
+h5.text-block__subtitle {
+    @apply inline;
+}
+
+.text-block__sizes {
+    @apply flex;
+}
+
+.text-block__sizes-block {
+    @apply w-1/2;
+}
+
+.text-block__specification {
+    @apply my-4;
+}

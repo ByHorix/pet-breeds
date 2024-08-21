@@ -7,18 +7,28 @@ export type Breed = {
         "imperial": string,
         "metric": string
     },
-    "id": 1,
+    "id": number | string,
     "name": string,
-    "bred_for": string,
-    "breed_group": string,
     "life_span": string,
-    "temperament": string,
-    "origin": string,
     "reference_image_id": string,
     "image": {
         "id": string,
         "width": number,
         "height": number,
         "url": string
-    }
+    },
+    "bred_for"?: string,
+    "breed_group"?: string,
+    "country_code"?: string,
+    "temperament"?: string,
+    "origin"?: string,
+    "description"?: string
+};
+
+export type PhotoBasic = {
+    breeds: Omit<Breed, 'image'>[],
+    id: string,
+    url: string,
+    width: number,
+    height: number,
 };

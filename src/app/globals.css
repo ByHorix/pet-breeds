@@ -14,4 +14,8 @@ main {
   .text-balance {
     text-wrap: balance;
   }
+
+  .text-block-height {
+    max-height: calc(100vh - 128px); /* 128px = tailwind's 16 * 2 */
+  }
 }
