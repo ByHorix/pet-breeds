@@ -1,0 +1,23 @@
+.search-block {
+    @apply w-full sm:w-96 relative;
+}
+
+.search-block__input {
+    @apply bg-lime-50 border-b-2 py-2 px-4 placeholder-gray-500 w-full;
+    @apply focus:outline-0;
+}
+
+.search-block__autocomplete {
+    @apply absolute z-10 h-0 transition-all overflow-y-scroll w-full;
+}
+
+.search-block__autocomplete.active {
+    @apply h-96;
+}
+
+.autocomplete-item {
+    @apply p-4 bg-lime-100;
+    @apply border-b-2 border-lime-800;
+    @apply last:border-none;
+    @apply cursor-pointer;
+}

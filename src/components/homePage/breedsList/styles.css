@@ -7,3 +7,7 @@
     @apply pb-4;
     /*@apply pb-4;*/
 }
+
+.breeds-list-header {
+    @apply sm:flex justify-between items-center mb-4;
+}

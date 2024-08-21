@@ -1,4 +1,5 @@
 import {Breed, PhotoBasic} from "@/types/types";
+import {Dispatch, SetStateAction} from "react";
 
 export type BreedCardProps = {
     breedData: Breed
@@ -19,4 +20,10 @@ export type TextInfoBlockProps = {
 
 export type BreedsListProps = {
     breedsList: Breed[]
+}
+
+export type SearchProps = {
+    searchValue: string,
+    setSearchValue: Dispatch<SetStateAction<string>>
+    resultList: Breed[]
 }
